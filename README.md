@@ -7,8 +7,7 @@ Sugere-se que na página index.html tenha-se um <section></section> vazio para o
 
 Quando uma rota startup não é definida, assume-se o conteúdo da section presente na página index.html.
 
-Exemplo com section não vazio: 
-Exemplo com section vazio:
+Exemplo: https://gist.github.com/breitech/f92ab6d8d4a84d6f93ac
 
 ### Templates
 
