@@ -2,6 +2,7 @@
 var HTM = {};
 
 var HTM = {
+	routePath: 'views/routes/',
 	nav: {
 		startup: {},
 		routes: {},
@@ -20,14 +21,13 @@ var HTM = {
 
 		console.log('Init navigate to:' + HTM.nav.startup);
 		
-		$('section').load('routes/'+HTM.nav.startup);
+		$('section > article[router]').load(HTM.routePath+HTM.nav.startup);
 	},
 
 	navTo: function(page) {
-		var navPage = 'routes/'+page+'.html';
+		var navPage = HTM.routePath+page+'.html';
 		console.log('Navigate to:' + page);
 		
-		$('section').load(navPage);
+		$('section > article[router]').load(navPage);
 	}
-
 };
