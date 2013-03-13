@@ -2,6 +2,7 @@
 var HTM = {};
 
 var HTM = {
+	pagePath: 'views/pages/',
 	routePath: 'views/routes/',
 	nav: {
 		startup: {},
@@ -21,13 +22,18 @@ var HTM = {
 
 		console.log('Init navigate to:' + HTM.nav.startup);
 		
-		$('section > article[router]').load(HTM.routePath+HTM.nav.startup);
+		$('body').load(HTM.pagePath+HTM.nav.startup);
 	},
-
 	navTo: function(page) {
-		var navPage = HTM.routePath+page+'.html';
+		var navPage = HTM.pagePath+page+'.html';
 		console.log('Navigate to:' + page);
 		
-		$('section > article[router]').load(navPage);
-	}
+		$('body').load(navPage);
+	}, 
+	routeTo: function(route) {
+		var navRoute = HTM.routePath+route+'.html';
+		console.log('Route to:' + route);
+		
+		$('section > article[router]').load(navRoute);
+	}, 
 };

@@ -1,0 +1,25 @@
+<html>
+<body>
+	<div>
+		LOGIN		
+		<label id="nav-map">map</label>
+		<label id="nav-friends">friends</label>
+		<label id="nav-events">events</label>
+	</div>
+	<section>
+        <article router></article>
+    </section>
+
+	<script>
+        $('#nav-map').click(function(){
+		 	HTM.routeTo('map');
+		});
+		$('#nav-friends').click(function(){
+		 	HTM.routeTo('friends');
+		});
+		$('#nav-events').click(function(){
+		 	HTM.routeTo('events');
+		});	 
+    </script>
+</body>
+</html>

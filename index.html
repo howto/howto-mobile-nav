@@ -9,13 +9,8 @@
     </head>
     <body>
         
-        <section>
-            
-        </section>
-
         <!-- JS THIRD -->
         <!-- JS THIRD - EmberJS -->
-        <script src="js/quo.js"></script>
         <script src="js/zepto.js"></script>
         <script src="js/ht.mobile.nav-1.0.js"></script>
         
@@ -27,18 +22,20 @@
                 HTM.init(
                     {
                         startup: "login.html",
-                        routes: {
-                            map: "map.html",
-                            friends: "friens.html",
-                            events: "events.html"
+                        // views/pages/*
+                        pages: {
+                            login: "login.html",
+                            main: "main.html"
                         },
-                        templates: {
-                            eventList: "eventlist.html"
+                        // views/routes/*
+                        routes: { 
+                            map: "map.html",
+                            friends: "friends.html",
+                            events: "events.html"
                         }
                     }
                 );                
-            });
-            
+            });            
             
         </script>
     </body>
